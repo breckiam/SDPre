@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austin's Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+     rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+  </head>
+
+  <body>
+    <header>
+        <div class = "logo">
+            <img src="img/logo.svg" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class ="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href ="index.html" class="nav__link">Home</a><li/>
+                <li class="nav__item"><a href ="index.html" class="nav__link">About</a><li/>
+                <li class="nav__item"><a href ="index.html" class="nav__link">Projects</a><li/>
+                <li class="nav__item"><a href ="index.html" class="nav__link">Blog</a><li/>
+                <li class="nav__item"><a href ="index.html" class="nav__link">Contact</a><li/>
+            </ul>
+        </nav>
+    </header>
+
+    <!--- Introduction ----->
+      <section class ="intro" id ="home">
+          <h2 class="section__title section__title--intro">
+            Hi, I'm<br>
+            <strong>Austin Breckenfelder</strong><br>
+            Full Stack Developer
+          </h2>
+          <a href="#" class="btn"> View my work →</a>
+      </section>
+
+
+      <!----- About --------->
+      <section class ="my-about" id="about">
+        <h2 class="section__title section__title--about"> Who is this guy?  </h2>
+          <div class="my-hero">
+              <div class="my-hero-img">
+                <img src="img/hero.jpg">
+              </div>
+
+
+
+
+              <div class="my-hero-description">
+                <p>Im a Full stack Developer... Well Im working my way to that.
+                   Currently I am a full-time student at Skill Distillery for
+                   Full Stack Development. I have a serious passion for animations,
+                   user experinces, and creating amazing things. Lets create
+                   something amazing.</p>
+              </div>
+              <div class="my-hero-btn">
+                <a href="#"> Learn more → </a>
+              </div>
+          </div>
+      </section>
+
+      <!----- skills ---------->
+          <section class="my-skills" id="skills">
+
+              <div class="my-skills-imgs">
+                      <img src="img/html-logo.svg" class="skills-html">
+                      <img src="img/css-logo.svg" class="skills-css">
+                      <img src="img/javascript-logo.svg" class="skills-javascript">
+                      <img src="img/java-logo.svg" class="skills-java">
+
+              </div>
+          </section>
+
+      <!----- Projects ------->
+      <section class="my-projects" id="projects">
+          <h2 class=" section__title">Projects</h2>
+
+          <div class="project-veiwer-container">
+              <div class="mac-img">
+                <img src="img/mac-ies.png" class="project-viewer" id="mac">
+              </div>
+              <div class="project-text">
+              <h3 class="project-title" id="1"> IES CORP.</h3>
+                <p class="project-description" id="2"> Created using HTML, CSS, and
+                      JavaScript. Websited started from a template and was
+                      modified to current look and functionality. </p>
+                <a href="https://iescorporation.net/" class="project-link" id="3"> Visit
+                  site </a>
+              </div>
+          </div>
+
+          <div class="portfolio">
+            <!----- Portfolio item #1 ------>
+            <div class="portfolio-item">
+              <img src="img/elevated-logo1.png" class="project-logo" >
+              <button class ="project-btn" id="btn1">
+                  View →
+              </button>
+            </div>
+
+            <!----- Portfolio item #2 ------>
+            <div class="portfolio-item">
+              <img src="img/epik-logo.png" class="project-logo">
+              <button class ="project-btn" id="btn2">
+                  View →
+              </button>
+            </div>
+
+            <!----- Portfolio item #3 ------>
+            <div class="portfolio-item">
+              <img src="img/ies-logo.png" class="project-logo">
+              <button class ="project-btn" id="btn3">
+                  View →
+              </button>
+            </div>
+          </div>
+      </section>
+
+      <!--------- Footer --------->
+      <footer>
+        <!------email link ----->
+        <a href="mailto:breckiam@gmail.com" class="footer-link">
+        breckiam@gmail.com </a>
+        <ul class="social-list">
+            <!--- LinkedIn ---->
+            <li class="social-link__item"><a class="social-list__link"
+            href="https://www.linkedin.com/in/austin-breckenfelder-88574816a/">
+             a </a></li>
+            <!---- GitHub ---->
+            <li class="social-link__item"><a class="social-list__link"
+            href="https://github.com/breckiam"> a </a></li>
+            <!---- TikTok ---->
+            <li class="social-link__item"><a class="social-list__link"
+            href="https://www.tiktok.com">
+            a </a></li>
+        </ul>
+
+        <!----Icon credits ----->
+        <p>Icon by <a href="https://freeicons.io/profile/3">
+          icon king1</a> on <a href="https://freeicons.io">freeicons.io</a></p>
+
+        <script src="js/index.js"></script>
+      </footer>
+
+
+  </body>
+</html>
