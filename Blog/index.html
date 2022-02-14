@@ -1,154 +1,327 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Austin's Portfolio</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
-     rel="stylesheet">
-
-    <link rel="stylesheet" href="CSS/style.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;800&family=Dancing+Script:wght@700&family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b94aad8e29.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <header>
-        <div class = "logo">
-            <img src="img/logo.svg" alt="">
+        <!-------Logo and switch ------>
+        <div class="header-logo-switch" >
+            <a href="index.html">
+            <h2 class="logo"> Breckiam </h2>
+            </a>
+            <label class="switch" for="checkbox">
+              <input type="checkbox" id="checkbox"/>
+              <span class="slider round"></span>
+            </label>
         </div>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
-        <nav class ="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href ="index.html" class="nav__link">Home</a><li/>
-                <li class="nav__item"><a href ="index.html" class="nav__link">About</a><li/>
-                <li class="nav__item"><a href ="index.html" class="nav__link">Projects</a><li/>
-                <li class="nav__item"><a href ="index.html" class="nav__link">Blog</a><li/>
-                <li class="nav__item"><a href ="index.html" class="nav__link">Contact</a><li/>
-            </ul>
+
+        <!------ Navigation -------->
+        <nav class="nav">
+          <a href ="index.html" class="nav__link">
+            <i class="fa-solid fa-user"></i>
+            <span class="nav-text">About</span>
+          </a>
+          <a href ="projects.html" class="nav__link">
+            <i class="fa-solid fa-laptop-code"></i>
+            <span class="nax-text">Projects</span>
+          </a>
+          <a href ="blog.html" class="nav__link">
+            <i class="fa-solid fa-blog"></i>
+            <span class="nav-text">Blog</span>
+          </a>
+          <a href ="#contact" class="nav__link">
+            <i class="fa-solid fa-address-card"></i>
+            <span class="nav-text">Contact</span>
+          </a>
         </nav>
     </header>
+    <!------ intro ------>
+    <section class="intro">
+        <div class="intro-text">
+          <div class="intro-text-container">
+            <h1 class="intro-title section-title">Hi 👋 </h1>
+            <h1 class="intro-name"> Im <strong>Austin,</strong></h1>
+            <h1 class="intro-hobby"> Web Developer </h1>
+            <p class="intro-decription">
+              Full time student, part time googler
+            </p>
 
-    <!--- Introduction ----->
-      <section class ="intro" id ="home">
-          <h2 class="section__title section__title--intro">
-            Hi, I'm<br>
-            <strong>Austin Breckenfelder</strong><br>
-            Full Stack Developer
-          </h2>
-          <a href="#" class="btn"> View my work →</a>
-      </section>
-
-
-      <!----- About --------->
-      <section class ="my-about" id="about">
-        <h2 class="section__title section__title--about"> Who is this guy?  </h2>
-          <div class="my-hero">
-              <div class="my-hero-img">
-                <img src="img/hero.jpg">
-              </div>
-
-
-
-
-              <div class="my-hero-description">
-                <p>Im a Full stack Developer... Well Im working my way to that.
-                   Currently I am a full-time student at Skill Distillery for
-                   Full Stack Development. I have a serious passion for animations,
-                   user experinces, and creating amazing things. Lets create
-                   something amazing.</p>
-              </div>
-              <div class="my-hero-btn">
-                <a href="#"> Learn more → </a>
-              </div>
+            <a href="#contact" class="btn intro-btn">
+              Contact Me!
+            </a>
           </div>
-      </section>
+        </div>
+    </section>
 
-      <!----- skills ---------->
-          <section class="my-skills" id="skills">
-
-              <div class="my-skills-imgs">
-                      <img src="img/html-logo.svg" class="skills-html">
-                      <img src="img/css-logo.svg" class="skills-css">
-                      <img src="img/javascript-logo.svg" class="skills-javascript">
-                      <img src="img/java-logo.svg" class="skills-java">
-
-              </div>
-          </section>
-
-      <!----- Projects ------->
-      <section class="my-projects" id="projects">
-          <h2 class=" section__title">Projects</h2>
-
-          <div class="project-veiwer-container">
-              <div class="mac-img">
-                <img src="img/mac-ies.png" class="project-viewer" id="mac">
-              </div>
-              <div class="project-text">
-              <h3 class="project-title" id="1"> IES CORP.</h3>
-                <p class="project-description" id="2"> Created using HTML, CSS, and
-                      JavaScript. Websited started from a template and was
-                      modified to current look and functionality. </p>
-                <a href="https://iescorporation.net/" class="project-link" id="3"> Visit
-                  site </a>
-              </div>
+    <!------Skills & Tools ------>
+    <section class="skills">
+        <div class="skills-container">
+          <div class="custom-shape-divider-top-1644538026">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                  <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+              </svg>
           </div>
 
-          <div class="portfolio">
-            <!----- Portfolio item #1 ------>
-            <div class="portfolio-item">
-              <img src="img/elevated-logo1.png" class="project-logo" >
-              <button class ="project-btn" id="btn1">
-                  View →
-              </button>
-            </div>
-
-            <!----- Portfolio item #2 ------>
-            <div class="portfolio-item">
-              <img src="img/epik-logo.png" class="project-logo">
-              <button class ="project-btn" id="btn2">
-                  View →
-              </button>
-            </div>
-
-            <!----- Portfolio item #3 ------>
-            <div class="portfolio-item">
-              <img src="img/ies-logo.png" class="project-logo">
-              <button class ="project-btn" id="btn3">
-                  View →
-              </button>
-            </div>
+          <div class="skills-text">
+              <h2 class="skills-title">Skills & Tools</h2>
+              <p>Skills and tools I use to create amazing technology</p>
           </div>
-      </section>
 
-      <!--------- Footer --------->
-      <footer>
-        <!------email link ----->
-        <a href="mailto:breckiam@gmail.com" class="footer-link">
-        breckiam@gmail.com </a>
-        <ul class="social-list">
-            <!--- LinkedIn ---->
-            <li class="social-link__item"><a class="social-list__link"
-            href="https://www.linkedin.com/in/austin-breckenfelder-88574816a/">
-             a </a></li>
-            <!---- GitHub ---->
-            <li class="social-link__item"><a class="social-list__link"
-            href="https://github.com/breckiam"> a </a></li>
-            <!---- TikTok ---->
-            <li class="social-link__item"><a class="social-list__link"
-            href="https://www.tiktok.com">
-            a </a></li>
-        </ul>
+          <div class="skills-html">
+              <i class="fa-brands fa-html5 skills-logos"></i>
+          </div> <!---HTML--->
 
-        <!----Icon credits ----->
-        <p>Icon by <a href="https://freeicons.io/profile/3">
-          icon king1</a> on <a href="https://freeicons.io">freeicons.io</a></p>
+          <div class="skills-css">
+              <i class="fa-brands fa-css3-alt skills-logos"></i>
+          </div> <!---CSS--->
+
+          <div class="skills-javascript">
+              <i class="fa-brands fa-js-square skills-logos"></i>
+          </div> <!---js---->
+
+          <div class="skills-java">
+              <i class="fa-brands fa-java skills-logos"></i>
+          </div> <!----Java---->
+
+          <div class="skills-git">
+              <i class="fa-brands fa-git-square skills-logos"></i>
+          </div> <!---Git---->
+
+          <div class="skills-github">
+              <i class="fa-brands fa-github-square skills-logos"></i>
+          </div> <!---github---->
+        </div>
+    </section>
+
+    <!----Portfolio------>
+    <section class="portfolio">
+        <div class="portfolio-container">
+          <!shape divider>
+          <div class="custom-shape-divider-top-1644606979">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                  <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
+              </svg>
+          </div>
+
+          <div class="portfolio-title"><h2>Portfolio</h2> </div>
+
+
+
+          <!-----Project 1------>
+            <div class="project-container">
+                <div class="project-img">
+                    <img src="img/mac-ies.png" class="mac-img">
+                </div>
+                <div class="project-info">
+                    <h2 class="project-title">IES CORP.</h2>
+                    <p class="project-description">
+                      Created using HTML, CSS, and JavaScript. Websited started
+                      from a template and was modified to current look and
+                      functionality.
+                    </p>
+                    <a target="_blank" rel="noopener noreferrer"
+                    href="https://iescorporation.net/" class="project-link btn">
+                        Visit Site
+                    </a>
+                </div>
+                <div class="project-type">
+                    <h3 class="project-type-text">HTML/CSS</h3>
+                </div>
+            </div>
+
+            <!----Project 2----->
+          <div class="project-container">
+                <div class="project-img">
+                    <img src="img/mac-epik.png" class="mac-img">
+                </div>
+                <div class="project-info">
+                    <h2 class="project-title">Epik Media</h2>
+                    <p class="project-description">
+                      Created using Wordpress with the use of elementor to
+                      adjust layout and styling.
+                    </p>
+                    <a target="_blank" rel="noopener noreferrer"
+                    href="https://epikmedia.co/" class="project-link btn">
+                        Visit Site
+                    </a>
+                </div>
+                <div class="project-type">
+                    <h3 class="project-type-text">WORDPRESS</h3>
+                </div>
+            </div>
+
+            <!-----Project 3------->
+            <div class="project-container">
+                <div class="project-img">
+                    <img src="img/mac-elevated.png" class="mac-img">
+                </div>
+                <div class="project-info">
+                    <h2 class="project-title">Elevated Takeoff</h2>
+                    <p class="project-description">
+                      Created using Wordpress with the use of elementor to
+                      adjust layout and styling.
+                    </p>
+                    <a target="_blank" rel="noopener noreferrer"
+                    href="https://elevatedtakeoff.com/" class="project-link btn">
+                        Visit Site
+                    </a>
+                </div>
+                <div class="project-type">
+                    <h3 class="project-type-text">WORDPRESS</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------- Blog ------->
+    <section class="blog">
+
+      <div class="blog-container">
+        <!-----Title----->
+        <div class="blog-section-title">
+          <h2> Blog </h2>
+        </div>
+
+        <!----Article 1-------->
+        <article class="browser article-1">
+          <!-----browser svg circles ------------>
+          <div class="browser-svg">
+            <i class="fa-solid fa-circle"></i>
+            <i class="fa-solid fa-circle"></i>
+            <i class="fa-solid fa-circle"></i>
+          </div>
+          <!-----browser line----->
+          <hr class="browser-hr">
+          <!----Article contents------>
+            <a href="" class="blog-title-link">
+                <h3 class="blog-title">Coming Soon...</h3>
+            </a>
+            <p class="blog-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+
+            </p>
+            <a href="" class="blog-btn"> Read Post </a>
+        </article>
+
+        <!----Article 2-------->
+        <article class="browser article-2">
+          <!-----browser svg circles ------------>
+          <div class="browser-svg">
+            <i class="fa-solid fa-circle"></i>
+            <i class="fa-solid fa-circle"></i>
+            <i class="fa-solid fa-circle"></i>
+          </div>
+          <!-----browser line----->
+          <hr class="browser-hr">
+          <!----Article contents------>
+            <a href="" class="blog-title-link">
+                <h3 class="blog-title">Coming Soon...</h3>
+            </a>
+            <p class="blog-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            </p>
+            <a href="" class="blog-btn"> Read Post </a>
+        </article>
+
+        <!----Article 3-------->
+        <article class="browser article-3">
+          <!-----browser svg circles ------------>
+          <div class="browser-svg">
+            <i class="fa-solid fa-circle"></i>
+            <i class="fa-solid fa-circle"></i>
+            <i class="fa-solid fa-circle"></i>
+          </div>
+          <!-----browser line----->
+          <hr class="browser-hr">
+          <!----Article contents------>
+            <a href="" class="blog-title-link">
+                <h3 class="blog-title">Coming Soon...</h3>
+            </a>
+            <p class="blog-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            </p>
+            <a href="" class=" blog-btn"> Read Post</a>
+        </article>
+        <div class="full-blog-button">
+        <a href="#Blog" class=" btn">View Blog</a>
+      </div>
+      </div>
+    </section>
+
+    <section class="contact" id=contact>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h2>Lets chat </h2>
+            <h3> Don't be shy! </h3>
+            <p>If you looking for a new member on the team or just to chat,
+                select one of the following options.</p>
+
+                <a class ="contact-btn btn"
+                href="mailto:breckiam@gmail.com?subject= I wanto hire you!">
+                👨🏻‍💻‍  I want to hire you!
+                </a>
+
+                <a class ="contact-btn btn"
+                href="mailto:breckiam@gmail.com?subject= Your website is awesome!
+                How can I get one???">
+                 🗣  I just want to chat
+                </a>
+
+                <a class ="contact-btn btn" href="tel: 303-505-8943">
+                 📱  Can I call or text?
+                </a>
+          </div>
+
+          <div class="contact-social">
+              <a href="https://www.linkedin.com/in/austin-breckenfelder-88574816a/">
+              <i class="fa-brands fa-linkedin"></i> </a>
+
+              <a href="https://github.com/breckiam">
+                <i class="fa-brands fa-github-square"></i> </a>
+
+              <a href="https://www.tiktok.com/@austinbreckenfeld">
+                <i class="fa-brands fa-tiktok"></i></a>
+          </div>
+
+          <div class="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.9655727464483!2d-104.82703554896985!3d39.98687468949244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c6d47212f6b17%3A0x66304078f9b1ca0!2sBrighton%2C%20CO%2080601!5e0!3m2!1sen!2sus!4v1644700160548!5m2!1sen!2sus"
+               width="100%" height="100%" style="border:0;" allowfullscreen=""
+               loading="lazy"></iframe>
+          </div>
+        </div>
+    </section>
+
+    <!-------Footer-------->
+    <footer>
+        <div class="footer-container">
+          <div class="custom-shape-divider-top-1644710025">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                  <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
+              </svg>
+          </div>
+          <p>| Deigned & coded by Austin Breckenfelder | </p>
+
+        </div>
 
         <script src="js/index.js"></script>
-      </footer>
-
+    </footer>
 
   </body>
 </html>
